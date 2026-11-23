@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>ZESTO Owner Dashboard — preview</title>
+    <link rel="stylesheet" href="../Cashier/assets/css/style.css">
+    <link rel="stylesheet" href="zesto-preview.css">
+    <script src="zesto-admin-preview.js" defer></script>
+  </head>
+  <body data-role="owner">
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="ZESTO owner navigation">
+        <a class="brand" href="#" aria-label="ZESTO preview home">
+          <span class="brand-mark" aria-hidden="true"><img src="../Cashier/assets/images/zesto-logo.png" alt=""></span>
+          <span class="brand-name">ZESTO<span>.</span></span>
+        </a>
+        <div class="sidebar-label">OWNER WORKSPACE</div>
+        <nav class="main-nav" aria-label="Owner workspace">
+          <button class="nav-link active" type="button" data-preview-view="dashboard" aria-current="page"><span class="nav-icon">◷</span><span>Dashboard</span></button>
+          <button class="nav-link" type="button" data-preview-view="sales"><span class="nav-icon">▤</span><span>Sales history</span></button>
+          <button class="nav-link" type="button" data-preview-view="financial"><span class="nav-icon">₿</span><span>Financial</span></button>
+          <button class="nav-link" type="button" data-preview-view="cashiers"><span class="nav-icon">♙</span><span>Cashiers</span></button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="shift-card">
+            <span class="shift-dot"></span>
+            <div><strong>Store open</strong><small>Owner preview</small></div>
+          </div>
+          <div class="user-card">
+            <div class="avatar">A</div>
+            <div class="user-info"><strong>Alex</strong><small>Owner preview</small></div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="mobile-brand">
+            <span class="brand-mark" aria-hidden="true"><img src="../Cashier/assets/images/zesto-logo.png" alt=""></span>
+            <span class="brand-name">ZESTO<span>.</span></span>
+          </div>
+          <div class="breadcrumb"><span>Store</span><span class="crumb-slash">/</span><strong id="page-title">Dashboard</strong></div>
+          <div class="topbar-actions">
+            <div class="store-status"><span class="status-dot"></span> Sample data</div>
+            <span class="topbar-divider"></span>
+            <div class="date-display" id="today-date"></div>
+          </div>
+        </header>
+
+        <section class="view active" id="dashboard-view">
+          <div class="page-heading compact-heading">
+            <div><p class="eyebrow">YOUR BUSINESS AT A GLANCE</p><h1>Dashboard</h1><p class="subheading">Income, purchases, and operating costs.</p></div>
+            <div class="dashboard-actions">
+              <label class="period-select"><span>Period</span><select id="dashboard-period"><option value="month">This month</option><option value="today">Today</option><option value="year">This year</option><option value="all">All time</option></select></label>
+              <button class="checkout-button small-action" id="add-expense-button" type="button">＋ Record expense</button>
+            </div>
+          </div>
+          <div class="stats-grid owner-stats-grid">
+            <article class="stat-card"><span class="stat-label">Sales income</span><span class="stat-icon pink-icon">↗</span><strong data-stat="sales">$12,840.50</strong><small data-stat="tax">Tax collected: $612.40</small></article>
+            <article class="stat-card"><span class="stat-label">Total expenses</span><span class="stat-icon purple-icon">↘</span><strong data-stat="expenses">$7,229.40</strong><small>Stock purchases + operating costs</small></article>
+            <article class="stat-card"><span class="stat-label">Net after expenses</span><span class="stat-icon yellow-icon">◆</span><strong data-stat="net">$5,611.10</strong><small>Income minus recorded spending</small></article>
+            <article class="stat-card"><span class="stat-label">Orders</span><span class="stat-icon purple-icon">▤</span><strong data-stat="orders">386</strong><small>For the selected period</small></article>
+          </div>
+          <div class="dashboard-detail-grid">
+            <article class="table-card">
+              <div class="table-heading"><div><h2>Where the money went</h2><p class="muted">Stock purchases and operating costs.</p></div></div>
+              <div class="table-wrap"><table><thead><tr><th>EXPENSE CATEGORY</th><th>AMOUNT</th></tr></thead><tbody>
+                <tr><td>Stock purchases</td><td>$4,802.00</td></tr>
+                <tr><td>Staff</td><td>$1,550.00</td></tr>
+                <tr><td>Delivery</td><td>$538.00</td></tr>
+                <tr><td>Utilities</td><td>$339.40</td></tr>
+              </tbody></table></div>
+            </article>
+            <article class="table-card expense-history-card">
+              <div class="table-heading"><div><h2>Recent expenses</h2><p class="muted">Sample operating costs and restocks.</p></div></div>
+              <div class="table-wrap"><table><thead><tr><th>DATE / EXPENSE</th><th>PAID TO</th><th>AMOUNT</th></tr></thead><tbody>
+                <tr><td>Today · Produce restock</td><td>Daily Produce</td><td>$320.00</td></tr>
+                <tr><td>Yesterday · Utilities</td><td>City Utilities</td><td>$145.00</td></tr>
+                <tr><td>Nov 20 · Packaging</td><td>EcoPack</td><td>$87.50</td></tr>
+                <tr><td>Nov 19 · Stock purchase</td><td>Fresh Foods</td><td>$640.00</td></tr>
+              </tbody></table></div>
+            </article>
+          </div>
+          <article class="table-card">
+            <div class="table-heading"><div><h2>Recent orders</h2><p class="muted">A sample of the latest transactions.</p></div><button class="text-button" type="button" data-view-link="sales">View all →</button></div>
+            <div class="table-wrap"><table><thead><tr><th>ORDER</th><th>CUSTOMER</th><th>ITEMS</th><th>PAYMENT</th><th>TOTAL</th><th>TIME</th></tr></thead><tbody>
+              <tr><td>#1048</td><td>Walk-in</td><td>3 items</td><td>Cash</td><td>$18.90</td><td>10:42 AM</td></tr>
+              <tr><td>#1047</td><td>Maya K.</td><td>2 items</td><td>Card</td><td>$12.60</td><td>10:31 AM</td></tr>
+              <tr><td>#1046</td><td>Walk-in</td><td>1 item</td><td>Cash</td><td>$5.48</td><td>10:18 AM</td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="view" id="sales-view">
+          <div class="page-heading compact-heading">
+            <div><p class="eyebrow">TRANSACTION LOG</p><h1>Sales history</h1><p class="subheading">Sample orders recorded in the preview.</p></div>
+          </div>
+          <article class="table-card sales-table-card">
+            <div class="table-heading"><div><h2>All transactions</h2><p class="muted">5 sample orders</p></div><label class="search-box table-search"><span>⌕</span><input id="sales-search" type="search" placeholder="Search orders..." autocomplete="off"></label></div>
+            <div class="table-wrap"><table><thead><tr><th>ORDER</th><th>CUSTOMER</th><th>ITEMS</th><th>PAYMENT</th><th>TOTAL</th><th>TIME</th></tr></thead><tbody id="sales-table-body">
+              <tr><td>#1048</td><td>Walk-in</td><td>3 items</td><td>Cash</td><td>$18.90</td><td>Today · 10:42 AM</td></tr>
+              <tr><td>#1047</td><td>Maya K.</td><td>2 items</td><td>Card</td><td>$12.60</td><td>Today · 10:31 AM</td></tr>
+              <tr><td>#1046</td><td>Walk-in</td><td>1 item</td><td>Cash</td><td>$5.48</td><td>Today · 10:18 AM</td></tr>
+              <tr><td>#1045</td><td>Sam R.</td><td>4 items</td><td>Card</td><td>$27.25</td><td>Today · 9:56 AM</td></tr>
+              <tr><td>#1044</td><td>Walk-in</td><td>2 items</td><td>Cash</td><td>$11.20</td><td>Today · 9:43 AM</td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="view" id="financial-view">
+          <div class="page-heading compact-heading"><div><p class="eyebrow">INVENTORY &amp; COSTS</p><h1>Financial</h1><p class="subheading">Sample stock, suppliers, and purchase spending.</p></div></div>
+          <div class="stats-grid financial-stats">
+            <article class="stat-card"><span class="stat-label">Stock value</span><span class="stat-icon pink-icon">◆</span><strong>$2,840.00</strong><small>At purchase cost</small></article>
+            <article class="stat-card"><span class="stat-label">Total spent</span><span class="stat-icon purple-icon">↗</span><strong>$7,229.40</strong><small>Initial stock + restocks</small></article>
+            <article class="stat-card"><span class="stat-label">Low in stock</span><span class="stat-icon yellow-icon">!</span><strong>2</strong><small>Items needing restock</small></article>
+          </div>
+          <div class="financial-grid">
+            <article class="table-card inventory-card">
+              <div class="table-heading"><div><h2>Available stock</h2><p class="muted">6 sample inventory items</p></div><label class="search-box table-search"><span>⌕</span><input id="inventory-search" type="search" placeholder="Search stock..." autocomplete="off"></label></div>
+              <div class="table-wrap financial-table-wrap"><table><thead><tr><th>ITEM</th><th>CATEGORY</th><th>SUPPLIER</th><th>STOCK</th><th>COST / UNIT</th><th>STATUS</th></tr></thead><tbody id="inventory-table-body">
+                <tr><td>Triple Burger</td><td>Burgers</td><td>Daily Produce</td><td>42 items</td><td>$2.10</td><td>In stock</td></tr>
+                <tr><td>Double Cheese</td><td>Burgers</td><td>City Dairy</td><td>18 items</td><td>$1.45</td><td>In stock</td></tr>
+                <tr><td>Chicken Pop</td><td>Snacks</td><td>Fresh Foods</td><td>6 items</td><td>$2.05</td><td>Low stock</td></tr>
+                <tr><td>Kebab Katsu</td><td>Snacks</td><td>Meat Market</td><td>3 items</td><td>$2.50</td><td>Low stock</td></tr>
+                <tr><td>House Lemonade</td><td>Drinks</td><td>Daily Produce</td><td>24 bottles</td><td>$0.80</td><td>In stock</td></tr>
+                <tr><td>Chocolate Shake</td><td>Drinks</td><td>City Dairy</td><td>12 cups</td><td>$1.20</td><td>In stock</td></tr>
+              </tbody></table></div>
+            </article>
+            <article class="table-card supplier-card">
+              <div class="table-heading"><div><h2>Suppliers</h2><p class="muted">Sample purchasing partners</p></div></div>
+              <div class="supplier-list">
+                <div class="supplier-row"><span class="supplier-avatar">D</span><div class="supplier-info"><strong>Daily Produce</strong><small>Produce · 12 purchases</small></div><span class="supplier-spend">$1,840</span></div>
+                <div class="supplier-row"><span class="supplier-avatar">C</span><div class="supplier-info"><strong>City Dairy</strong><small>Dairy · 8 purchases</small></div><span class="supplier-spend">$1,120</span></div>
+                <div class="supplier-row"><span class="supplier-avatar">F</span><div class="supplier-info"><strong>Fresh Foods</strong><small>Groceries · 6 purchases</small></div><span class="supplier-spend">$864</span></div>
+              </div>
+            </article>
+          </div>
+          <article class="table-card purchases-card">
+            <div class="table-heading"><div><h2>Recent purchases</h2><p class="muted">Food, drinks, and supplies</p></div></div>
+            <div class="table-wrap"><table><thead><tr><th>ITEM</th><th>SUPPLIER</th><th>QUANTITY</th><th>UNIT COST</th><th>TOTAL</th><th>DATE</th></tr></thead><tbody>
+              <tr><td>Triple Burger stock</td><td>Daily Produce</td><td>30</td><td>$2.10</td><td>$63.00</td><td>Today</td></tr>
+              <tr><td>Chicken Pop stock</td><td>Fresh Foods</td><td>24</td><td>$2.05</td><td>$49.20</td><td>Nov 20</td></tr>
+              <tr><td>Packaging boxes</td><td>EcoPack</td><td>100</td><td>$0.38</td><td>$38.00</td><td>Nov 18</td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="view" id="cashiers-view">
+          <div class="page-heading compact-heading"><div><p class="eyebrow">STAFF ACTIVITY</p><h1>Cashiers</h1><p class="subheading">Review sample cashier shifts and recorded sales.</p></div></div>
+          <article class="table-card sales-table-card">
+            <div class="table-heading"><div><h2>Cashier shifts</h2><p class="muted">3 sample staff members</p></div></div>
+            <div class="table-wrap"><table><thead><tr><th>CASHIER</th><th>OPENED</th><th>CLOSED</th><th>ORDERS</th><th>SALES</th><th>STATUS</th></tr></thead><tbody>
+              <tr><td>Alex</td><td>Today · 8:00 AM</td><td>—</td><td>42</td><td>$1,284.50</td><td>Active</td></tr>
+              <tr><td>Maya</td><td>Today · 8:15 AM</td><td>—</td><td>28</td><td>$842.30</td><td>Active</td></tr>
+              <tr><td>Sam</td><td>Yesterday · 9:00 AM</td><td>Yesterday · 5:00 PM</td><td>36</td><td>$1,096.80</td><td>Closed</td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="preview-toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolie Dresses | Frontend Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Jolie/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 18px 0;
+            border-bottom: 1px solid rgba(183, 135, 83, 0.18);
+            background: rgba(255, 253, 249, 0.94);
+            box-shadow: 0 8px 28px rgba(53, 39, 26, 0.08);
+            backdrop-filter: blur(16px);
+        }
+        .nav-container {
+            position: relative;
+            display: flex;
+            max-width: 1200px;
+            align-items: center;
+            justify-content: center;
+            gap: 34px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar .logo {
+            position: absolute;
+            left: 20px;
+            flex-shrink: 0;
+            font-size: 30px;
+            letter-spacing: 1.5px;
+        }
+        .navbar .logo a { color: #D4A574; text-decoration: none; }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .nav-menu li a {
+            position: relative;
+            padding: 8px 0;
+            color: #2C2C2C;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .nav-icons {
+            position: absolute;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .nav-icons a { color: #2C2C2C; font-size: 18px; text-decoration: none; }
+        .mobile-menu-toggle {
+            display: none;
+            border: 0;
+            background: none;
+            color: #2C2C2C;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .nav-container { flex-wrap: wrap; justify-content: space-between; }
+            .navbar .logo { position: static; margin-right: auto; }
+            .mobile-menu-toggle { display: block; }
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 25px 20px;
+                background: #fff;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            }
+            .nav-menu.is-open { display: flex; }
+            .nav-icons { position: static; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#home">Jolie</a></div>
+            <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#categories">Shop</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#categories" title="Browse dresses" aria-label="Browse dresses"><i class="fas fa-search"></i></a>
+                <a href="#collections" title="Sample collections" aria-label="Sample collections"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Elegance Redefined</h1>
+                    <h2>With <span class="brand-highlight">Jolie</span> Dresses</h2>
+                    <p>Discover our exquisite collection of bridal, evening, and kids dresses. Rent or buy your perfect dress today.</p>
+                    <a class="cta-button" href="#categories">Shop the collection <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-gallery">
+                    <div class="hero-showcase">
+                        <div class="showcase-stage">
+                            <img class="showcase-image is-active" id="jolie-showcase-image" src="../Jolie/uploads/collections/01f697af0a61f3c847b0370f279904c0.png" alt="Jolie featured dress collection">
+                            <div class="showcase-copy">
+                                <span class="showcase-kicker">FEATURED COLLECTION</span>
+                                <h3 id="jolie-showcase-title">The Jolie Edit</h3>
+                                <p id="jolie-showcase-caption">A look for the moments that matter.</p>
+                                <a href="#collections">Discover the collection <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="showcase-controls">
+                            <span class="showcase-count" id="jolie-showcase-count">01 / 03</span>
+                            <button type="button" data-jolie-step="-1" aria-label="Previous collection"><i class="fas fa-arrow-left"></i></button>
+                            <button type="button" data-jolie-step="1" aria-label="Next collection"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <a class="category-card" href="#collections">
+                        <div class="category-image"><img src="../Jolie/images/bridal.jpg" alt="Bridal dresses"></div>
+                        <h3>Bridal</h3>
+                        <p>For your once-in-a-lifetime moments.</p>
+                        <div class="category-options"><span class="option-tag rent">Rent</span><span class="option-tag sale">Sale</span></div>
+                    </a>
+                    <a class="category-card" href="#collections">
+                        <div class="category-image"><img src="../Jolie/images/evening.png" alt="Evening dresses"></div>
+                        <h3>Evening</h3>
+                        <p>Make every entrance unforgettable.</p>
+                        <div class="category-options"><span class="option-tag rent">Rent</span><span class="option-tag sale">Sale</span></div>
+                    </a>
+                    <a class="category-card" href="#collections">
+                        <div class="category-image"><img src="../Jolie/images/kids.png" alt="Children's dresses"></div>
+                        <h3>Kids</h3>
+                        <p>Little looks for big celebrations.</p>
+                        <div class="category-options"><span class="option-tag rent">Rent</span><span class="option-tag sale">Sale</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections" class="featured-products">
+            <div class="container">
+                <h2>Featured Collections</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="../Jolie/uploads/collections/01f697af0a61f3c847b0370f279904c0.png" alt="The Jolie Edit collection">
+                            <div class="product-overlay"><a class="view-btn" href="#about">View Collection</a></div>
+                        </div>
+                        <h4>The Jolie Edit</h4>
+                        <p class="price">Curated dresses for every occasion</p>
+                        <div class="product-type"><span class="type-badge">Collection</span></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="../Jolie/uploads/collections/1c607c3c1569bdad3ca13bda1b4ea2f2.png" alt="The Evening Edit collection">
+                            <div class="product-overlay"><a class="view-btn" href="#about">View Collection</a></div>
+                        </div>
+                        <h4>The Evening Edit</h4>
+                        <p class="price">A little more for the special night</p>
+                        <div class="product-type"><span class="type-badge">Collection</span></div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="../Jolie/uploads/collections/222c799a735ad0d8024ddee20632273a.png" alt="Celebration collection">
+                            <div class="product-overlay"><a class="view-btn" href="#about">View Collection</a></div>
+                        </div>
+                        <h4>Celebration</h4>
+                        <p class="price">Find a favorite for the day</p>
+                        <div class="product-type"><span class="type-badge">Collection</span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2>About Jolie</h2>
+                    <p>At Jolie, we offer elegant dresses for every occasion. Whether it's bridal or evening, discover a look that feels like you.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Premium quality dresses</li>
+                        <li><i class="fas fa-check"></i> Flexible rental and purchase options</li>
+                        <li><i class="fas fa-check"></i> Expert styling consultation</li>
+                        <li><i class="fas fa-check"></i> Frontend sample only - no orders are placed</li>
+                    </ul>
+                </div>
+                <img class="about-image" src="../Jolie/images/jolie_dress_boutique_330x280.png" alt="Jolie dress boutique">
+            </div>
+        </section>
+    </main>
+    <script src="jolie-preview.js"></script>
+</body>
+</html>

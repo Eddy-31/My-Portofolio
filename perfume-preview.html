@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Slider Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../perfume/styles.css">
+</head>
+<body>
+    <header class="global-header">
+        <div class="global-header__inner">
+            <div class="brand-mark">
+                <span class="brand-mark__glyph">É</span>
+                <div class="brand-mark__text">
+                    <span class="brand-mark__title">Maison Élixir</span>
+                    <span class="brand-mark__subtitle">Les Parfums Signature</span>
+                </div>
+            </div>
+            <nav class="global-nav" aria-label="Primary">
+                <a href="#collections" class="global-nav__link">Collections</a>
+                <a href="#story" class="global-nav__link">Story</a>
+                <a href="#atelier" class="global-nav__link">Atelier</a>
+            </nav>
+            <a class="header-cta" href="#story">Explore the maison</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="hero">
+            <div class="hero__content">
+                <span class="hero__eyebrow">The Atelier Collection</span>
+                <h1 class="hero__title">Perfume Slider Showcase</h1>
+                <p class="hero__copy">
+                    An immersive digital presentation crafted for luxury fragrance houses.
+                    Explore three art-directed worlds and discover each scent story.
+                </p>
+                <div class="hero__actions">
+                    <a class="hero__cta" href="#collections">Explore Slider</a>
+                    <a class="hero__link" href="#story">Discover the maison</a>
+                </div>
+            </div>
+            <div class="hero__accent" aria-hidden="true"></div>
+        </section>
+
+        <section class="slider-shell" aria-label="Perfume slider" data-theme="midnight" id="collections">
+            <div class="slider-shell__ambient"></div>
+            <div class="monitor">
+                <div class="monitor__screen">
+                    <div class="slides-track" role="list">
+                        <article class="slide is-active" data-theme="midnight" role="listitem">
+                            <header class="slide__header">
+                                <p class="slide__eyebrow">Noir Assemblage</p>
+                                <h2 class="slide__title">Midnight Resonance</h2>
+                                <p class="slide__copy">A rich blend of oud, black pepper, and amber accords bottled in sculpted obsidian glass for late night reverie.</p>
+                            </header>
+                            <ul class="bottle-grid">
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Armani%20Code%20Eau%20De%20Parfum.webp" alt="Armani Code Eau De Parfum"><span>No.01</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Armani%20Code%20Eau%20De%20Toilette.webp" alt="Armani Code Eau De Toilette"><span>No.02</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Armani%20Code%20Le%20Parfum.webp" alt="Armani Code Le Parfum"><span>No.03</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Stronger%20With%20You%20Intensely%20Eau%20De%20Parfum.webp" alt="Stronger With You Intensely"><span>No.04</span></li>
+                            </ul>
+                        </article>
+                        <article class="slide" data-theme="crystal" role="listitem">
+                            <header class="slide__header">
+                                <p class="slide__eyebrow">Crystal Ledger</p>
+                                <h2 class="slide__title">Luminous Accord</h2>
+                                <p class="slide__copy">Brisk notes of neroli, jasmine, and iced musk shine through prismatic glass silhouettes, capturing daylight clarity.</p>
+                            </header>
+                            <ul class="bottle-grid">
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Acqua%20Di%20Gio%20Profondo%20Eau%20De%20Toilette.webp" alt="Acqua Di Gio Profondo Eau De Toilette"><span>No.01</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Acqua%20Di%20Gio%20Profondo%20Parfum.webp" alt="Acqua Di Gio Profondo Parfum"><span>No.02</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/azzaro/Chrome%20Eau%20De%20Toilette.webp" alt="Chrome Eau De Toilette"><span>No.03</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/kenzo/KENZO%20HOMME%20EDP%20100ML.webp" alt="Kenzo Homme Eau De Parfum"><span>No.04</span></li>
+                            </ul>
+                        </article>
+                        <article class="slide" data-theme="ember" role="listitem">
+                            <header class="slide__header">
+                                <p class="slide__eyebrow">Scarlet Issue</p>
+                                <h2 class="slide__title">Ember Silhouettes</h2>
+                                <p class="slide__copy">Smoldering cinnamon, smoked cedar, and leather wrap around crimson glass vessels for a bold evening signature.</p>
+                            </header>
+                            <ul class="bottle-grid">
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Stronger%20With%20You%20Absolutely%20Parfum.webp" alt="Stronger With You Absolutely Parfum"><span>No.01</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Stronger%20With%20You%20Intensely%20Eau%20De%20Parfum.webp" alt="Stronger With You Intensely Eau De Parfum"><span>No.02</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Stronger%20With%20You%20Only%20Eau%20De%20Toilette.webp" alt="Stronger With You Only Eau De Toilette"><span>No.03</span></li>
+                                <li class="bottle-grid__item"><img src="../perfume/photos/Men/armani/Stronger%20With%20You%20Eau%20De%20Toilette.webp" alt="Stronger With You Eau De Toilette"><span>No.04</span></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+                <div class="monitor__base"></div>
+            </div>
+            <div class="slider-controls" aria-label="Slider controls">
+                <button class="control-btn" data-direction="prev" aria-label="Previous collection"><span>&larr;</span></button>
+                <div class="control-dots" role="tablist"></div>
+                <button class="control-btn" data-direction="next" aria-label="Next collection"><span>&rarr;</span></button>
+            </div>
+        </section>
+
+        <section id="story" class="section narrative">
+            <div class="section__inner">
+                <div class="section__intro">
+                    <span class="section__eyebrow">Maison Élixir</span>
+                    <h2 class="section__title">A Fragrance House with a Cinematic Spirit</h2>
+                    <p class="section__copy">A visual story for each scent, pairing distinctive notes with considered lighting, palette, and composition.</p>
+                </div>
+                <div class="story-grid" role="list">
+                    <article class="story-grid__card" role="listitem"><h3>Midnight Resonance</h3><p>Oud, black pepper, and warm amber for a deep evening mood.</p></article>
+                    <article class="story-grid__card" role="listitem"><h3>Luminous Accord</h3><p>Neroli, jasmine, and iced musk in a bright, clear composition.</p></article>
+                    <article class="story-grid__card" role="listitem"><h3>Ember Silhouettes</h3><p>Cinnamon, smoked cedar, and leather for a bold signature.</p></article>
+                </div>
+            </div>
+        </section>
+        <footer class="footer"><p>Frontend preview · Sample imagery from local project assets</p></footer>
+    </main>
+    <script src="../perfume/script.js"></script>
+</body>
+</html>
