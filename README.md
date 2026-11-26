@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi 👋, I'm Ahmad Mustafa
+# I'm Ahmad Mustafa
 
 ### Full Stack Web Developer
 
@@ -13,7 +13,7 @@ I build responsive, user-focused web applications and digital experiences.
 
 ---
 
-## 🚀 About Me
+## About Me
 
 - 💻 Full Stack Web Developer passionate about building modern web applications.
 - 🛠️ Focused on creating responsive interfaces and practical digital solutions.
@@ -33,9 +33,9 @@ I build responsive, user-focused web applications and digital experiences.
 | Project | Description |
 |---|---|
 | **ZESTO** | Restaurant point-of-sale and operations workspace. |
-| **Jolie Atelier** | Fine-jewelry storefront. |
+| **Masara Atelier** | Fine-jewelry storefront. |
 | **Jolie** | Fashion boutique with customer and administrator interfaces. |
-| **Scent, in Motion** | Fragrance collection showcase. |
+| **Azera** | Fragrance collection showcase. |
 | **Taste on the Way** | Food-ordering platform. |
 | **Bookhub** | Library discovery and management platform. |
 
