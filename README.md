@@ -1,47 +1,76 @@
-# Ahmad Mustafa - Portfolio
+<div align="center">
 
-A responsive portfolio showcasing selected web projects, role-specific project previews, and contact information.
+# Hi 👋, I'm Ahmad Mustafa
 
-## Overview
+### Full Stack Web Developer
 
-The homepage includes an introduction, project cards with category filters, an About section, and contact links. Each project opens a preview with its audience or account roles, a short user journey, and related screenshots.
+I build responsive, user-focused web applications and digital experiences.
 
-### Featured projects
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://eddy-31.github.io/My-Portofolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmad-mustafa-e%E1%B4%85%E1%B4%8D%CA%8F-2672b339b/)
 
-- **ZESTO** - Restaurant point-of-sale and operations workspace.
-- **Jolie Atelier** - Fine-jewelry storefront.
-- **Jolie** - Fashion boutique for customers and administrators.
-- **Scent, in motion** - Fragrance collection showcase.
-- **Taste on the way** - Food-ordering platform.
-- **Bookhub** - Library discovery and management platform.
+</div>
 
-## Tech
+---
 
-- HTML
-- CSS
-- Vanilla JavaScript
+## 🚀 About Me
 
-The portfolio itself is a static site and has no package installation or build step. Project previews present screenshots and sample interface data; they do not connect to the showcased projects' backends.
+- 💻 Full Stack Web Developer passionate about building modern web applications.
+- 🛠️ Focused on creating responsive interfaces and practical digital solutions.
+- 🔭 Developing projects across e-commerce, restaurant management, and web platforms.
+- 🌱 Currently expanding my knowledge of cloud computing and Oracle Cloud Infrastructure.
+- 🎯 Always learning, building, and improving my development skills.
+- 🤝 Open to collaboration and professional opportunities.
 
-## Run locally
+## 🛠️ Tech Stack
 
-### With XAMPP
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,php,mysql,git,github,vscode" />
+</p>
 
-1. Place this folder inside `C:\xampp\htdocs\Portofolio`.
-2. Start Apache from the XAMPP Control Panel.
-3. Open [http://localhost/Portofolio/](http://localhost/Portofolio/) in a browser.
+## 💼 Featured Projects
 
-### With VS Code Live Server
+| Project | Description |
+|---|---|
+| **ZESTO** | Restaurant point-of-sale and operations workspace. |
+| **Jolie Atelier** | Fine-jewelry storefront. |
+| **Jolie** | Fashion boutique with customer and administrator interfaces. |
+| **Scent, in Motion** | Fragrance collection showcase. |
+| **Taste on the Way** | Food-ordering platform. |
+| **Bookhub** | Library discovery and management platform. |
 
-Open `index.html` in VS Code and select **Go Live**.
+Explore the projects and previews on my [Portfolio](https://eddy-31.github.io/My-Portofolio/).
 
-## Project files
+## 💻 Technologies
 
-- `index.html` - Portfolio homepage.
-- `styles.css` and `script.js` - Homepage styles and interactions.
-- `project.html`, `project.css`, and `project.js` - Project preview page and its data.
-- `portfolio-preview.jpg` - Open Graph preview image for social sharing.
-- `images/brand-logos/` - Project logos.
-- `images/project-screenshots/` - Screenshots used in project previews.
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL
+- **Tools:** Git, GitHub, VS Code
 
-The email and WhatsApp links open Gmail compose and WhatsApp, respectively.
+## 🤝 Connect with Me
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/ahmad-mustafa-e%E1%B4%85ᴍʏ-2672b339b/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://eddy-31.github.io/My-Portofolio/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-181717?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  </a>
+</p>
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Eddy-31&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eddy-31&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
+
+---
+
+<div align="center">
+
+**Building ideas into digital experiences. 🚀**
+
+</div>
